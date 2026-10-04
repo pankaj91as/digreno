@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DIGRENO Invoice</title>
+<meta name="description" content="GST invoicing app for Android. Make GST-ready tax invoices on your phone from ₹0.20 a bill, with CGST/SGST/IGST, HSN summary, UPI QR and thermal printing.">
+<link rel="canonical" href="https://digreno.com/">
+<meta name="theme-color" content="#4338CA">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DIGRENO">
+<meta property="og:title" content="DIGRENO Invoice">
+<meta property="og:description" content="GST invoicing app for Android. Make GST-ready tax invoices on your phone from ₹0.20 a bill, with CGST/SGST/IGST, HSN summary, UPI QR and thermal printing.">
+<meta property="og:url" content="https://digreno.com/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="/"><img src="/assets/logo.svg" alt="" width="34" height="34"><span>DIGRENO<small>Invoice</small></span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <div class="nav-links" id="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#templates">Templates</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+<main id="main" class="wrap">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">DIGRENO Invoice · for Android</span>
+      <h1>GST tax invoices from your phone, <em>from ₹0.20 a bill.</em></h1>
+      <p class="lede">Make, print and share GST-ready invoices in under a minute. Pay only for the invoices you generate. No subscription, and credits never expire.</p>
+      <div class="hero-actions">
+        <a class="play-badge" href="#download" aria-disabled="true">
+          <svg viewBox="0 0 22 24" aria-hidden="true"><path fill="#34A853" d="M1 1.2 12.4 12 1 22.8c-.4-.2-.6-.7-.6-1.2V2.4c0-.5.2-1 .6-1.2Z"/><path fill="#FBBC04" d="m16.2 8.2-3.8 3.8 3.8 3.8 4.3-2.4c1.2-.7 1.2-2.1 0-2.8l-4.3-2.4Z"/><path fill="#4285F4" d="M1 1.2c.3-.2.8-.2 1.3.1l13.9 6.9-3.8 3.8L1 1.2Z"/><path fill="#EA4335" d="M1 22.8 12.4 12l3.8 3.8-13.9 6.9c-.5.3-1 .3-1.3.1Z"/></svg>
+          <span><small>Coming soon on</small><strong>Google Play</strong></span>
+        </a>
+        <a class="btn btn-ghost" href="#pricing">See pricing</a>
+      </div>
+      <ul class="hero-facts">
+        <li>5 free invoices to start</li>
+        <li>Works offline</li>
+        <li>Your data stays on your phone</li>
+      </ul>
+    </div>
+
+    <div class="demo" aria-label="Sample invoice made with DIGRENO Invoice">
+      <div class="pos-switch">
+        <span>Place of supply</span>
+        <span class="seg" role="group" aria-label="Place of supply">
+          <button type="button" data-pos="intra" aria-pressed="true">Same state</button>
+          <button type="button" data-pos="inter" aria-pressed="false">Other state</button>
+        </span>
+      </div>
+      <div class="invoice-scroll">
+        <article class="invoice" id="demo-invoice">
+          <div class="inv-top">
+            <div>
+              <h3>Sai Fabricators</h3>
+              <div>Plot 14, MIDC Bhosari, Pune, Maharashtra 411026</div>
+              <div class="mono">GSTIN 27ABCFS4821K1Z0</div>
+            </div>
+            <div class="inv-title">
+              <b>TAX INVOICE</b>
+              <div class="mono">INV/2026-10-05/0002</div>
+              <div class="mono">05 Oct 2026</div>
+            </div>
+          </div>
+          <div class="inv-meta">
+            <div>
+              <div class="lbl">Bill to</div>
+              <div><strong>Meridian Interiors Pvt Ltd</strong></div>
+              <div id="buyer-addr">Baner Road, Pune, Maharashtra</div>
+              <div class="mono">GSTIN <span id="buyer-gstin">27AAKCM7314P1ZU</span></div>
+            </div>
+            <div>
+              <div class="lbl">Place of supply</div>
+              <div class="mono" id="inv-pos">27 – Maharashtra</div>
+              <div class="lbl" style="margin-top:8px">Reverse charge</div>
+              <div>No</div>
+            </div>
+          </div>
+          <table class="inv-items">
+            <thead><tr><th>Item</th><th>HSN/SAC</th><th class="num">Qty</th><th class="num">Rate</th><th class="num">Taxable ₹</th></tr></thead>
+            <tbody>
+              <tr><td>MS steel gate, 6 ft</td><td class="mono">7308</td><td class="num">1</td><td class="num">18,500.00</td><td class="num">18,500.00</td></tr>
+              <tr><td>Powder coating</td><td class="mono">998873</td><td class="num">1</td><td class="num">3,200.00</td><td class="num">3,200.00</td></tr>
+              <tr><td>Hinges, heavy duty</td><td class="mono">8302</td><td class="num">4</td><td class="num">450.00</td><td class="num">1,800.00</td></tr>
+            </tbody>
+          </table>
+          <div class="inv-bottom">
+            <div>
+              <div class="lbl" style="font:600 9.5px/1.2 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:#6B7280;margin-bottom:3px">Amount in words</div>
+              <div class="inv-words">Rupees Twenty-Seven Thousand Seven Hundred Thirty Only</div>
+              <div class="inv-upi"><canvas id="upi-qr" width="25" height="25" aria-hidden="true"></canvas><span>Scan to pay by UPI<br><span class="mono" style="font-size:10px">saifab@upi</span></span></div>
+            </div>
+            <dl class="inv-totals">
+              <dt>Taxable value</dt><dd>23,500.00</dd>
+              <div id="tax-rows" style="display:contents"></div>
+              <dt class="grand">Total</dt><dd class="grand">₹27,730.00</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+      <p class="demo-note" id="demo-explain" aria-live="polite">Seller and buyer are both in <b>Maharashtra</b>, so the tax splits into <b>CGST + SGST</b>.</p>
+    </div>
+  </section>
+
+  <section class="band" id="how">
+    <div class="section-head">
+      <span class="eyebrow">How it works</span>
+      <h2>Four steps from order to PDF</h2>
+      <p>Set up your business once. After that, every invoice follows the same short path.</p>
+    </div>
+    <ol class="steps">
+      <li><h3>Details</h3><p>Invoice number and date fill in automatically. Pick a customer or add a new one with their GSTIN.</p></li>
+      <li><h3>Items</h3><p>Add goods or services from your product list, with HSN/SAC, unit, rate and GST slab.</p></li>
+      <li><h3>Summary</h3><p>Discounts, CGST, SGST or IGST, round-off and the total in words, worked out for you.</p></li>
+      <li><h3>Preview</h3><p>Check the finished invoice, then generate the PDF to print or send on WhatsApp.</p></li>
+    </ol>
+  </section>
+
+  <section class="band" id="features">
+    <div class="section-head">
+      <span class="eyebrow">Features</span>
+      <h2>Built around the GST rules you deal with every day</h2>
+    </div>
+    <div class="features">
+      <div class="feature"><span class="tag">CGST + SGST ⇄ IGST</span><h3>The right tax, every time</h3><p>Choose the place of supply and the app applies intra-state or inter-state GST on its own.</p></div>
+      <div class="feature"><span class="tag">27ABCFS4821K1Z0 ✓</span><h3>GSTIN checked as you type</h3><p>All 15 characters are verified, including the state code and the check digit, so typos like O for 0 are caught before they reach a customer.</p></div>
+      <div class="feature"><span class="tag">INV/2026-10-05/0002</span><h3>Your numbering, your format</h3><p>Set a prefix, date style and running number. The app keeps it within GST's 16-character limit.</p></div>
+      <div class="feature"><span class="tag">HSN / SAC summary</span><h3>Tax summary by HSN</h3><p>GST-format templates print an HSN-wise tax table, ready for your returns and your accountant.</p></div>
+      <div class="feature"><span class="tag">Offline-first</span><h3>Works without internet</h3><p>Invoices, customers and products live on your phone. You need a connection only to log in and buy credits.</p></div>
+      <div class="feature"><span class="tag">PDF · WhatsApp · Print</span><h3>Share in one tap</h3><p>Send the PDF on WhatsApp or email, save it to your phone, or print on A4, A5 or an 80 mm thermal printer.</p></div>
+      <div class="feature"><span class="tag">UPI QR</span><h3>Get paid faster</h3><p>Add your bank details and UPI ID once. Supported templates print a UPI QR code on every bill.</p></div>
+      <div class="feature"><span class="tag">Drafts are free</span><h3>Fix mistakes at no cost</h3><p>Save drafts as often as you like. Editing and re-generating an invoice you already made uses no extra credit.</p></div>
+      <div class="feature"><span class="tag">App PIN</span><h3>Your books stay private</h3><p>Lock the app with a PIN. Reset it any time with an OTP sent to your registered mobile number.</p></div>
+    </div>
+  </section>
+
+  <section class="band" id="templates">
+    <div class="section-head">
+      <span class="eyebrow">Invoice templates</span>
+      <h2>Eleven designs, three paper sizes</h2>
+      <p>Set one as your default, or pick a different design for a single invoice.</p>
+    </div>
+    <div class="papers">
+      <div class="paper"><div class="sheet"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Classic</b><small>A4</small></div>
+      <div class="paper"><div class="sheet" style="--accent-paper:#111827"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Standard GST</b><small>A4</small></div>
+      <div class="paper"><div class="sheet" style="--accent-paper:#2563EB"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Modern</b><small>A4</small></div>
+      <div class="paper"><div class="sheet" style="--accent-paper:#0F766E"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>GST Bordered</b><small>A4 · UPI QR</small></div>
+      <div class="paper"><div class="sheet" style="--accent-paper:#93C5FD"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Tinted Grid</b><small>A4</small></div>
+      <div class="paper"><div class="sheet" style="--accent-paper:#000"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Bold Mono</b><small>A4</small></div>
+      <div class="paper"><div class="sheet" style="--accent-paper:#B08D3C"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Elegant Serif</b><small>A4</small></div>
+      <div class="paper"><div class="sheet" style="--accent-paper:#7C2D12"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Retail Counter</b><small>A4</small></div>
+      <div class="paper"><div class="sheet" style="--accent-paper:#EA580C"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Corporate Band</b><small>A4</small></div>
+      <div class="paper a5"><div class="sheet"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Compact A5</b><small>A5 landscape</small></div>
+      <div class="paper roll"><div class="sheet" style="--accent-paper:#111827"><i></i><i></i><i></i><i></i><i></i><i></i></div><b>Thermal</b><small>80 mm roll</small></div>
+    </div>
+  </section>
+
+  <section class="band" id="pricing">
+    <div class="section-head">
+      <span class="eyebrow">Pricing</span>
+      <h2>Pay per invoice. No monthly fee.</h2>
+      <p>One credit makes one invoice. Buy a pack when you need it.</p>
+    </div>
+    <div class="pricing">
+      <div class="trial">
+        <span class="eyebrow" style="color:#C9D8FF">Free trial</span>
+        <div class="big">5 invoices</div>
+        <p>Every new business gets 5 free credits after setup. No card needed.</p>
+      </div>
+      <div class="packs-wrap">
+        <table class="packs">
+          <thead><tr><th>Pack</th><th class="num">Price</th><th class="num">Per invoice</th></tr></thead>
+          <tbody>
+            <tr><td>20 invoices</td><td class="num">₹10</td><td class="num">₹0.50</td></tr>
+            <tr><td>100 invoices</td><td class="num">₹49</td><td class="num">₹0.49</td></tr>
+            <tr><td>250 invoices</td><td class="num">₹99</td><td class="num">₹0.40</td></tr>
+            <tr class="best"><td>1,000 invoices <span class="pill">Best value</span></td><td class="num">₹199</td><td class="num">₹0.20</td></tr>
+          </tbody>
+        </table>
+        <ul class="pricing-notes">
+          <li>Credits never expire and nothing renews automatically.</li>
+          <li>Drafts and edits to an invoice you already generated are free.</li>
+          <li>Pay securely by UPI, card or net banking through Razorpay.</li>
+          <li>The app shows current prices and any running offers before you pay.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="faq">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq">
+      <div>
+        <details><summary>Does the app work without internet?</summary><p>Yes. Invoices, customers and products are stored on your phone and work offline. You need internet to log in, buy credits and sync your credit balance.</p></details>
+        <details><summary>When is CGST + SGST applied and when IGST?</summary><p>If the place of supply is in the same state as your business, CGST and SGST are applied. If it is a different state, IGST is applied. The app decides this from the place of supply you select.</p></details>
+        <details><summary>Can I edit an invoice after generating it?</summary><p>Yes. Open the invoice and tap Edit. Updating an invoice you already generated does not use another credit.</p></details>
+        <details><summary>What is HSN / SAC?</summary><p>HSN codes classify goods and SAC codes classify services. Enter 4, 6 or 8 digits as your turnover requires. Service codes usually start with 99.</p></details>
+        <details><summary>Can I print on a thermal printer?</summary><p>Yes. The Thermal template is laid out for 80 mm receipt printers. A4 and A5 templates print on any regular printer.</p></details>
+      </div>
+      <div>
+        <details><summary>Do credits expire?</summary><p>No. Purchased credits do not expire. Every pack is a one-time purchase and nothing renews automatically.</p></details>
+        <details><summary>I changed my phone. Are my credits lost?</summary><p>No. Your credit balance is kept on our server. Log in with the same mobile number and your balance comes back automatically.</p></details>
+        <details><summary>How do I keep my invoices safe?</summary><p>Your invoices are stored on your phone. Keep Android backup turned on for your Google account so app data is restored on a new phone. You can also export a backup from Settings.</p></details>
+        <details><summary>Money was deducted but credits were not added.</summary><p>Credits usually appear within a few minutes once the bank confirms. In the app, open Help → Payment issues and tap Check status. If credits can't be added, the amount is refunded. See our <a href="refund.html">refund policy</a>.</p></details>
+        <details><summary>Is DIGRENO Invoice available on iPhone?</summary><p>Not yet. The app is launching on Android first.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" id="download">
+    <div>
+      <h2>Your next invoice, ready in under a minute.</h2>
+      <p>DIGRENO Invoice is launching on Google Play soon.</p>
+    </div>
+    <a class="play-badge" href="#download" aria-disabled="true">
+      <svg viewBox="0 0 22 24" aria-hidden="true"><path fill="#34A853" d="M1 1.2 12.4 12 1 22.8c-.4-.2-.6-.7-.6-1.2V2.4c0-.5.2-1 .6-1.2Z"/><path fill="#FBBC04" d="m16.2 8.2-3.8 3.8 3.8 3.8 4.3-2.4c1.2-.7 1.2-2.1 0-2.8l-4.3-2.4Z"/><path fill="#4285F4" d="M1 1.2c.3-.2.8-.2 1.3.1l13.9 6.9-3.8 3.8L1 1.2Z"/><path fill="#EA4335" d="M1 22.8 12.4 12l3.8 3.8-13.9 6.9c-.5.3-1 .3-1.3.1Z"/></svg>
+      <span><small>Coming soon on</small><strong>Google Play</strong></span>
+    </a>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/"><img src="/assets/logo.svg" alt="" width="34" height="34"><span>DIGRENO<small>Invoice</small></span></a>
+        <p style="margin-top:14px;max-width:34ch">GST invoicing for small businesses in India. Made in India.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul><li><a href="/#features">Features</a></li><li><a href="/#templates">Templates</a></li><li><a href="/#pricing">Pricing</a></li><li><a href="/#faq">FAQ</a></li></ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy Policy</a></li><li><a href="/terms.html">Terms of Service</a></li><li><a href="/refund.html">Refund Policy</a></li><li><a href="/delete-account.html">Delete account</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© <span data-year>2026</span> DIGRENO. All rights reserved.</span>
+      <span>Support: <a href="mailto:support@digrenoinvoice.com">support@digrenoinvoice.com</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
