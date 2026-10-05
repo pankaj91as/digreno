@@ -27,7 +27,7 @@ Paths are root-absolute (`/assets/...`), so preview with a local server: `python
 
 ## Before going live — fill the yellow placeholders
 Search for `class="fill"`: legal business name, registered address, Grievance Officer name, phone/WhatsApp, hours,
-GSTIN, jurisdiction city, and the unused-pack refund window (7 days). Create the `hello@digreno.com` mailbox
+GSTIN, jurisdiction city, and the unused-pack refund window (7 days). Create the `support@digreno.com` mailbox
 (company contact) or change it. Have the legal pages reviewed. When the app is published, replace the
 "Coming soon on Google Play" badges in `invoice/index.html` (`href="#download"`, `aria-disabled`) with the Play link.
 
