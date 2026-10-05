@@ -25,14 +25,14 @@ Paths are root-absolute (`/assets/...`), so preview with a local server: `python
 2. On `/index.html`, copy the `<article class="product">` block in `#products`, and add a footer column.
 3. Add the new URLs to `sitemap.xml`.
 
-## Before going live — fill the yellow placeholders
-Search for `class="fill"`: legal business name, registered address, Grievance Officer name, phone/WhatsApp, hours,
-GSTIN, jurisdiction city, and the unused-pack refund window (7 days). Create the `support@digreno.com` mailbox
-(company contact) or change it. Have the legal pages reviewed. When the app is published, replace the
-"Coming soon on Google Play" badges in `invoice/index.html` (`href="#download"`, `aria-disabled`) with the Play link.
+## Before going live
+All business details are filled in (DigReno, Mira Road address, GSTIN, phone, Grievance Officer Pankaj Pawar,
+support@digreno.com, no-refund policy, Thane jurisdiction). Have the legal pages reviewed. When the app is
+published, replace the "Coming soon on Google Play" badges in `invoice/index.html` (`href="#download"`,
+`aria-disabled`) with the Play link.
 
 Invoice prices mirror `plans.Defaults()` (₹10/20, ₹49/100, ₹99/250, ₹199/1000); update them if Sales changes the
-live catalog. Invoice support email matches the app (`support@digrenoinvoice.com`).
+live catalog. Support email everywhere: `support@digreno.com` (the Android app still defaults to `support@digrenoinvoice.com` in `HelpSupportScreen.kt` unless `/app/config` overrides it).
 
 ## Deploy (GitHub Pages)
 1. Create a GitHub repo (e.g. `digreno-website`) and push the contents of this folder to `main`.
