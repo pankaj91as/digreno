@@ -303,8 +303,8 @@ section.band { padding-block: 72px; border-top: 1px solid var(--line); }
 .subnav-crumb:hover { color: var(--ink); }
 
 /* DigReno wordmark (2026 brand): light/dark versions swap with the colour theme */
-.brand img.brand-logo { width: auto; height: 30px; border-radius: 0; }
-.brand-footer img.brand-logo { height: 34px; }
+.brand img.brand-logo { width: auto; height: 40px; border-radius: 0; }
+.brand-footer img.brand-logo { height: 44px; }
 .brand-logo--dark { display: none; }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .brand-logo--light { display: none; }

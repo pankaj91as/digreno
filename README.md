@@ -14,7 +14,8 @@ Static site (plain HTML/CSS/JS, no build step) hosted on GitHub Pages at **https
 /invoice/refund.html      Refund & cancellation (Razorpay needs this)
 /invoice/delete-account.html  -> Play Console "Delete account" URL
 /assets/                  site.css, site.js, invoice-logo.svg (product), company brand:
-                            digreno-wordmark-light/dark.svg (header + footer),
+                            digreno-lockup-light/dark.svg (logo + "Digital Renovation" tagline, header + footer),
+                            digreno-wordmark-light/dark.svg (logo without tagline),
                             digreno-mark.svg (icon / favicon), apple-touch-icon.png, og-digreno.png (link preview 1200x630)
 /favicon.ico
 CNAME .nojekyll robots.txt sitemap.xml
