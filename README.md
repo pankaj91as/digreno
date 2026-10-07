@@ -13,11 +13,16 @@ Static site (plain HTML/CSS/JS, no build step) hosted on GitHub Pages at **https
 /invoice/terms.html       App terms
 /invoice/refund.html      Refund & cancellation (Razorpay needs this)
 /invoice/delete-account.html  -> Play Console "Delete account" URL
-/assets/                  site.css, site.js, digreno-mark.svg (company), invoice-logo.svg (product)
+/assets/                  site.css, site.js, invoice-logo.svg (product), company brand:
+                            digreno-wordmark-light/dark.svg (header + footer),
+                            digreno-mark.svg (icon / favicon), apple-touch-icon.png, og-digreno.png (link preview 1200x630)
+/favicon.ico
 CNAME .nojekyll robots.txt sitemap.xml
 ```
 
 Header and footer are repeated in every page; edit them all when changing nav links.
+The company logo has light and dark files; `.brand-logo--light/--dark` in site.css swaps them with the colour theme.
+Source artwork for the brand (print + app sizes) lives in `D:\digreno-invoice\brand\`.
 Paths are root-absolute (`/assets/...`), so preview with a local server: `python -m http.server 8000` → http://localhost:8000
 
 ## Adding a product
