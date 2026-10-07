@@ -21,6 +21,10 @@ Static site (plain HTML/CSS/JS, no build step) hosted on GitHub Pages at **https
 CNAME .nojekyll robots.txt sitemap.xml
 ```
 
+Colours: company pages carry `<html class="co">` and use the DigReno brand (ink #111111 + lime #C6F432; olive #4D7300 for
+accent text on light backgrounds) from the `:root.co` block at the end of site.css. `/invoice/` pages keep the
+DIGRENO Invoice indigo (#4338CA). Add `class="co"` to any new company page.
+
 Header and footer are repeated in every page; edit them all when changing nav links.
 The company logo has light and dark files; `.brand-logo--light/--dark` in site.css swaps them with the colour theme.
 Source artwork for the brand (print + app sizes) lives in `D:\digreno-invoice\brand\`.

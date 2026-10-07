@@ -312,3 +312,33 @@ section.band { padding-block: 72px; border-top: 1px solid var(--line); }
 }
 :root[data-theme="dark"] .brand-logo--light { display: none; }
 :root[data-theme="dark"] .brand-logo--dark { display: block; }
+
+/* ---------- DigReno brand colours (company pages: <html class="co">) ----------
+   Matches the logo: ink black + lime. Lime is too light for text on white, so in light mode
+   text accents use a deep olive and lime is used as a fill (buttons, rules) with black text on it.
+   /invoice/ pages keep the DIGRENO Invoice app's indigo. */
+:root.co {
+  --bg: #F6F6F3; --surface: #FFFFFF; --ink: #111111; --muted: #5B5F55; --line: #E2E2DC;
+  --indigo: #4D7300;      /* accent text, links (5:1 on bg) */
+  --indigo-soft: #EEF5D6; /* lime tint */
+  --blue: #4D7300; --deep: #111111;
+  --lime: #C6F432; --on-lime: #111111; --on-accent: #FFFFFF;
+}
+@media (prefers-color-scheme: dark) {
+  :root.co:not([data-theme="light"]) {
+    --bg: #0E0F0C; --surface: #171915; --ink: #EDEEE8; --muted: #A3A69B; --line: #2A2D26;
+    --indigo: #C6F432; --indigo-soft: #23290F; --blue: #C6F432; --deep: #EDEEE8; --on-accent: #111111;
+  }
+}
+:root.co[data-theme="dark"] {
+  --bg: #0E0F0C; --surface: #171915; --ink: #EDEEE8; --muted: #A3A69B; --line: #2A2D26;
+  --indigo: #C6F432; --indigo-soft: #23290F; --blue: #C6F432; --deep: #EDEEE8; --on-accent: #111111;
+}
+.co .btn-primary { background: var(--lime); color: var(--on-lime); }
+.co .btn-primary:hover { filter: brightness(0.95); }
+.co .service, .co .steps li::after { border-top-color: var(--lime); }
+.co .steps li::after, .co .service li::before { background: var(--lime); }
+.co .cta { background: #111111; border: 1px solid var(--line); }
+.co .cta h2 { color: #FFFFFF; }
+.co .btn-light { background: var(--lime); color: #111111; }
+.co .text-link.light { color: #C6F432; }
